@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="scanline",
-    version="0.2.0",
+    version="0.2.1",
     py_modules = ['scanline'],
     entry_points={
         'console_scripts': [
@@ -20,7 +20,7 @@ setup(
     license="MIT",
     keywords="geology attitudes meshlab",
     url="https://github.com/endarthur/scanline",
-    dowload_url= "https://github.com/endarthur/scanline/archive/0.2.0.tar.gz",
+    dowload_url= "https://github.com/endarthur/scanline/archive/0.2.1.tar.gz",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
