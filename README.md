@@ -1,4 +1,5 @@
-#scanline
+scanline
+========
 
 ```
 usage: scanline.py [-h] [--start START] [--end END] [--out OUT] fname

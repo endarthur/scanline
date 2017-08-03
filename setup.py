@@ -3,7 +3,6 @@ from setuptools import setup
 setup(
     name="scanline",
     version="0.2.0",
-    packages=["scanline"],
     scripts=["scripts/scanline.bat", "scanline.py"],
 
     # Project uses reStructuredText, so ensure that the docutils get
