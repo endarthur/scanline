@@ -1,4 +1,3 @@
-from __future__ import print_function
 import xml.etree.ElementTree as ET
 from math import acos, degrees
 from collections import defaultdict
@@ -42,8 +41,7 @@ def parse_pp(fname, start, end):
     points_data.sort(key=lambda point: point[3])
     return points_data
 
-
-if __name__ == "__main__":
+def main():
     import argparse
     parser = argparse.ArgumentParser(
         description="Process .pp files into scanline data.")
@@ -82,3 +80,6 @@ if __name__ == "__main__":
     data_writer.writerows(data)
     if args.out is not None:
         f.close()
+
+if __name__ == "__main__":
+    main()

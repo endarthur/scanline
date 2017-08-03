@@ -3,8 +3,12 @@ from setuptools import setup
 setup(
     name="scanline",
     version="0.2.0",
-    scripts=["scripts/scanline.bat", "scanline.py"],
-
+    py_modules = ['scanline'],
+    entry_points={
+        'console_scripts': [
+            'scanline = scanline:main',
+        ]
+    },
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine
     install_requires=["numpy"],
@@ -16,6 +20,7 @@ setup(
     license="MIT",
     keywords="geology attitudes meshlab",
     url="https://github.com/endarthur/scanline",
+    dowload_url= "https://github.com/endarthur/scanline/archive/0.2.0.tar.gz",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Topic :: Utilities",
