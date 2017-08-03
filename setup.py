@@ -9,8 +9,7 @@ setup(
             'scanline = scanline:main',
         ]
     },
-    # Project uses reStructuredText, so ensure that the docutils get
-    # installed or upgraded on the target machine
+
     install_requires=["numpy"],
 
     # metadata for upload to PyPI
